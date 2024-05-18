@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Install software
 dnf update -y
 rpm --import https://packages.microsoft.com/keys/microsoft.asc
