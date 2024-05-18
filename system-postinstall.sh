@@ -10,7 +10,7 @@ dnf check-update
 dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 dnf install -y https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm 
-dnf install -y mc htop pass alacritty code sublime-text obs-studio vlc
+dnf install -y mc htop pass alacritty code virtualbox sublime-text obs-studio vlc
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub md.obsidian.Obsidian com.skype.Client com.discordapp.Discord
 mkdir -p /tmp/distrib
