@@ -5,7 +5,8 @@ dnf update -y
 rpm --import https://packages.microsoft.com/keys/microsoft.asc \
  https://www.virtualbox.org/download/oracle_vbox_2016.asc \
  https://download.sublimetext.com/sublimehq-rpm-pub.gpg
-echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | tee /etc/yum.repos.d/vscode.repo > /dev/null
+echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" \
+ | tee /etc/yum.repos.d/vscode.repo > /dev/null
 dnf config-manager --add-repo https://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo \
  https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
 dnf check-update
