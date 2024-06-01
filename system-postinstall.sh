@@ -18,3 +18,5 @@ flatpak install flathub md.obsidian.Obsidian com.skype.Client com.discordapp.Dis
 mkdir -p /tmp/distrib
 wget -O /tmp/distrib/telegram.tar.xz https://telegram.org/dl/desktop/linux
 tar -xvf /tmp/distrib/telegram.tar.xz -C /opt
+
+# Configure apps
