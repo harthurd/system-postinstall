@@ -2,6 +2,9 @@
 
 # Install software
 dnf update -y
+apt install -y make pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3 mc htop pass wireguard-tools vim obs-studio vlc aria2 libnotify-bin
+
+
 rpm --import https://packages.microsoft.com/keys/microsoft.asc
 rpm --import https://www.virtualbox.org/download/oracle_vbox_2016.asc
 rpm --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
@@ -12,7 +15,7 @@ dnf check-update
 dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm 
 dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 dnf install -y https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-dnf install -y mc htop pass alacritty wireguard-tools code VirtualBox sublime-text vim obs-studio vlc aria2
+dnf install -y  alacritty  code VirtualBox sublime-text 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub md.obsidian.Obsidian com.skype.Client com.discordapp.Discord
 mkdir -p /tmp/distrib
