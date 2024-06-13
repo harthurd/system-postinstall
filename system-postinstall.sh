@@ -2,7 +2,7 @@
 
 # Install software
 dnf update -y
-apt install -y make pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3 mc htop pass wireguard-tools vim obs-studio vlc aria2 libnotify-bin
+apt install -y make pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3 mc htop wget curl pass wireguard-tools vim obs-studio vlc aria2 libnotify-bin
 
 
 rpm --import https://packages.microsoft.com/keys/microsoft.asc
